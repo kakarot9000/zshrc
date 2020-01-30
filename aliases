@@ -1,0 +1,13 @@
+# make getting around the file system easier
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+
+# quick config edit
+alias z='vim ~/custom_files/zshrc'
+alias sz='source ~/custom_files/zshrc'
+
+# fix list
+alias l='l -lsrth'

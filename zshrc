@@ -1,3 +1,9 @@
+# source my env variables
+source ~/custom_files/zshrc/env_variables
+
+# source my alias
+source ~/custom_files/zshrc/aliases
+
 # add syntax highlighting to zsh
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -19,11 +25,10 @@ zstyle ':completion:*' group-name '' # group results by category
 zstyle ':completion:::::' completer _expand _complete _ignored _approximate #enable approximate matches for completion
 
 
-# add all of the alia's until my hearts content
+# add all of the alias' until my hearts content
 
 
-# react
-
+# React 
 react-app() {
   npx create-react-app $1
   cd $1
@@ -43,3 +48,7 @@ react-app() {
   clear
   code .
 }
+
+# python stuff
+export SITE_PACKAGES=/usr/local/lib/python3.7/site-packages
+

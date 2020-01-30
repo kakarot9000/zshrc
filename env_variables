@@ -1,0 +1,5 @@
+# For compilers to find sqlite you may need to set:
+export LDFLAGS="-L/usr/local/opt/sqlite/lib"
+export CPPFLAGS="-I/usr/local/opt/sqlite/include"
+
+
