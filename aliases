@@ -6,8 +6,20 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
 # quick config edit
-alias z='vim ~/custom_files/zshrc'
-alias sz='source ~/custom_files/zshrc'
+alias ze='vim ~/custom_files/zshrc'
+alias zs='source ~/zshrc'
 
 # fix list
-alias l='l -lsrth'
+alias l='ls -lrth'
+
+
+# python stuff
+alias pip='/usr/local/bin/pip3'
+
+# mkdir: create parent directories
+alias mkdir="mkdir -pv"
+
+# ping: stop after 5 pings
+alias ping="ping -c 5" 
+
+

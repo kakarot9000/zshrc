@@ -2,4 +2,8 @@
 export LDFLAGS="-L/usr/local/opt/sqlite/lib"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include"
 
+# python stuff
+export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3.7"
 
+# python stuff
+export SITE_PACKAGES="/usr/local/lib/python3.7/site-packages""

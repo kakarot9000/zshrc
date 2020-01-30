@@ -1,0 +1,24 @@
+hello(){
+    echo "hello $1"
+}
+
+# React
+react-app() {
+    npx create-react-app $1
+    cd $1
+    npm i -D eslint
+    npm i -D eslint-config-prettier eslint-plugin-prettier
+    npm i -D eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+    cp "${HOME}/.eslintrc.json" .
+    cp "${HOME}/.prettierrc" .
+    echo $1 > README.md
+    rm -rf yarn.lock
+    cd src
+    rm -f App.css App.test.js index.css logo.svg serviceWorker.js
+    mkdir components views
+    git add -A
+    git commit -m "Initial commit."
+    cd ..
+    clear
+    code .
+}

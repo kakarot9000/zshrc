@@ -1,9 +1,3 @@
-# source my env variables
-source ~/custom_files/zshrc/env_variables
-
-# source my alias
-source ~/custom_files/zshrc/aliases
-
 # add syntax highlighting to zsh
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -49,6 +43,4 @@ react-app() {
   code .
 }
 
-# python stuff
-export SITE_PACKAGES=/usr/local/lib/python3.7/site-packages
 
